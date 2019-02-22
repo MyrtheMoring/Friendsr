@@ -14,13 +14,15 @@ public class FriendsAdapter extends ArrayAdapter<Friend> {
 
     private ArrayList<Friend> friends;
 
-//    constructor
+    /* The constructor for the FriendsAdapter object. */
     public FriendsAdapter(Context context, int resource, ArrayList<Friend> objects) {
         super(context, resource, objects);
         friends = objects;
     }
 
-//    This method will be called every time a new grid item is to be displayed (for example, when scrolling).
+    /* This function will be called every time a new grid item is to be displayed.
+    * When there is no existing view, there will be a new view created. Otherwise it will fill in
+    * the grid with friends. */
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 

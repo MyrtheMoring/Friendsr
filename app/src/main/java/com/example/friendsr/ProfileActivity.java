@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
@@ -13,6 +14,8 @@ public class ProfileActivity extends AppCompatActivity {
 
     private Friend retrievedFriend;
 
+    /* The function onCreate will navigate to the second activity, which provide details on the
+    friend that was selected. */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +49,8 @@ public class ProfileActivity extends AppCompatActivity {
 
     }
 
+    /* Function RatingBarChangeListener will implement the OnRatingBarChangeListener for changing
+     ratings.*/
     private class RatingBarChangeListener implements RatingBar.OnRatingBarChangeListener {
         @Override
         public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
@@ -56,4 +61,8 @@ public class ProfileActivity extends AppCompatActivity {
             retrievedFriend.setRating(rating);
         }
     }
+
+
+
+
 }
