@@ -6,4 +6,4 @@ Datum: 22/02/2019
 The *Friendsr app* is a social friends app that allows you to view people’s profiles and some information about them. 
 
 1. The overview page:
-![alt text](https://github.com/MyrtheMoring/Friendsr/blob/master/overviewland.png "Overview")
+![alt text](https://github.com/MyrtheMoring/Friendsr/blob/master/overviewland.png "Overview" =100x20)
